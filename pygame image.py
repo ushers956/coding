@@ -26,5 +26,5 @@ while True:
             pygame.quit()
             quit()
 
-pygame.display.flip()
-clock.tick(30)
+    pygame.display.flip()
+    clock.tick(30)
