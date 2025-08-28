@@ -21,4 +21,10 @@ def findWater(a,a_size):
 
 
     for i in range(0, a_size):
-        water += min(leftTallest[i], rightTallest[i])
+        water += min(leftTallest[i], rightTallest[i]) - a[i]
+    
+    return water 
+
+a = [0,1,0,2,1,0,1,3,2,1,2,1]
+bars = len(a)
+print("water : ", findWater(a, bars))
